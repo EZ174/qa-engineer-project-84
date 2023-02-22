@@ -1,4 +1,5 @@
 ---
+test-cases:
  - summary: |
     Открытие приложения.
   status: pass  
