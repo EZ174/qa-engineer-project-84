@@ -1,3 +1,5 @@
+---
+test-cases:
 - summary: |
     Открытие приложения.
   requirement: |
