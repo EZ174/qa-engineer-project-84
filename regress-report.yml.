@@ -1,0 +1,179 @@
+- summary: |
+    Открытие приложения.
+  status: pass  
+---
+- summary: |
+    Кроссбраузерность
+  status: pass 
+---
+- summary: |
+    Смена языка в приложении
+  status: fail 
+ bugreports:
+- summary: |
+    язык в приложениии меняется не полностью
+  environment: |
+    <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Язык</span>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем кнопку смены языка
+    3-меняем язык
+  expected-result: |
+    Язык должен поменяться как в ресурсах поиска и упраления приложением, так и в описании товаров
+  actual-result: |
+    язык в ресурсках поиска и управления меняется, в описании товаров язык остается неизменным
+---    
+- summary: |
+    Фильтрация товаров по названию
+   status: pass
+---   
+- summary: |
+    Фильтрация товаров по названию
+    status: pass 
+---    
+- summary: |
+    Фильтрация товаров по категории
+    status: fail
+  bugreports:
+- summary: |
+    фильтраци по категории не происходит
+  environment: |
+    <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Категория</span>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем фильтр категории
+    3-выбираем категорию 
+  expected-result: |
+    товары должны отфильтроваться, согласно выбранной категории
+  actual-result: |
+    сортировка товаров не происходит
+---
+- summary: |
+    Фильтрация товаров по производителю
+  status: Fail
+  bugreports:
+- summary: |
+    фильтраци по производителю не происходит
+  environment: |
+    <span class="h6">Производитель</span>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-ставим галочки в окошках произодителя 
+  expected-result: |
+    товары должны отфильтроваться, согласно выбранным призводителям
+  actual-result: |
+    сортировка товаров по производителям  не происходит    
+---
+- summary: |
+    Фильтрация товаров по наличию в магазине
+  status: pass
+---
+- summary: |
+    Фильтрация товаров по цене
+    status: fail
+  bugreports:
+- summary: |
+    фильтраци по цене не происходит
+  environment: |
+    <span class="input-group-text">From - To:</span>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем поля с установкой цен
+    3-задаем минимальное значение
+    4-задаем среднее значение 
+  expected-result: |
+    товары должны отфильтроваться, согласно порогу ценовой категории
+  actual-result: |
+    сортировка товаров цене не происходит
+---
+- summary: |
+    добавление товаров в корзину
+  status: pass
+---
+- summary: |
+     Постраничный просмотр товаров
+   status: pass
+---
+- summary: |
+    Корзина отображается корректно.
+  status: fail
+bugreports:
+- summary: |
+    корзина отображантся некорректно
+  environment: |
+    <div class="col-4 d-flex align-items-center"><h6 class="me-3" style="margin-bottom: 0px;">MacBook Pro</h6></div>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем 4 и более разных товаров
+    3-заходим в корзину
+  expected-result: |
+    Корзина имеет ровные, отцентрованные колонки с указанием информации о товаре в каждой из них
+  actual-result: |
+    отсутствуют названия в колонках, отсутсвует центровка некоторых колонок
+---  
+- summary: |
+    Наличие товаров в корзине
+  status: pass
+---
+- summary: |
+    Отсутвиие перезагрузки сайта
+  status: pass
+---
+- summary: |
+    Сохранение товаров в корзине
+  status: pass
+---
+- summary: |
+    Изменение количества товаров в корзине 
+  status: fail  
+  bugreports:
+- summary: |
+    отсутствует функция изменения количества товаров
+  environment: |
+    <div class="col-1 text-decoration-line-through me-3">549$</div>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем товар
+    3-заходим в корзину
+  expected-result: |
+    Корзина имеет функцию изменения количества товара
+  actual-result: |
+    Функция изменения количества товара отсутствует
+---
+- summary: |
+    Удаление товаров из корзины
+  status: Fail
+  bugreports:
+- summary: |
+   история покупок сохраняется после выхода из корзины в магазин
+  environment: |
+    <a class="nav-link" href="/">Store</a>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем товары
+    3-заходим в корзину
+    4-очищаем лист от покупок
+    5-возвращаемся в магазин
+  expected-result: |
+    Корзина очищается, товары из корзины не сохраняются
+  actual-result: |
+    Корзина очищается при нажатии на Очистьть магазин, но при выходе в Магазин товары появляются в корзине снова
+---
+- summary: |
+    Оформление заказа
+  status:fail
+bugreports:
+- summary: |
+  При оформлении заказа отсутствует чек лист, кнопка (Х-закрытие окна) не работает
+  environment: |
+    <button class="btn btn-success" style="width: 20%;">Checkout</button>
+  steps-to-reproduce: |
+    1-открываем приложение
+    2-выбираем товары
+    3-заходим в корзину
+    4-нажимаем Оформить заказ
+  expected-result: |
+    Выскакивает поле сбора информации о клиенте (Email, телефон), поле можно закрыть нажав на (X) в правом верхнем углу
+  actual-result: |
+    При нажатии на Оформить заказ, Чек лист не появляется, кнопка (X) не работает
+ 
