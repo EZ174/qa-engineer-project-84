@@ -11,9 +11,9 @@ test-cases:
 - summary: |
     Смена языка в приложении
   status: fail 
- bugreports:
-- summary: |
-    язык в приложениии меняется не полностью
+bugreports:
+  - summary: |
+      язык в приложениии меняется не полностью
   environment: |
     <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Язык</span>
   steps-to-reproduce: |
@@ -36,9 +36,9 @@ test-cases:
 - summary: |
     Фильтрация товаров по категории
     status: fail
-  bugreports:
-- summary: |
-    фильтраци по категории не происходит
+bugreports:
+  - summary: |
+      фильтраци по категории не происходит
   environment: |
     <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Категория</span>
   steps-to-reproduce: |
@@ -73,9 +73,9 @@ test-cases:
 - summary: |
     Фильтрация товаров по цене
     status: fail
-  bugreports:
-- summary: |
-    фильтраци по цене не происходит
+bugreports:
+  - summary: |
+      фильтраци по цене не происходит
   environment: |
     <span class="input-group-text">From - To:</span>
   steps-to-reproduce: |
@@ -100,8 +100,8 @@ test-cases:
     Корзина отображается корректно.
   status: fail
 bugreports:
-- summary: |
-    корзина отображантся некорректно
+  - summary: |
+      корзина отображантся некорректно
   environment: |
     <div class="col-4 d-flex align-items-center"><h6 class="me-3" style="margin-bottom: 0px;">MacBook Pro</h6></div>
   steps-to-reproduce: |
@@ -128,9 +128,9 @@ bugreports:
 - summary: |
     Изменение количества товаров в корзине 
   status: fail  
-  bugreports:
-- summary: |
-    отсутствует функция изменения количества товаров
+bugreports:
+  - summary: |
+      отсутствует функция изменения количества товаров
   environment: |
     <div class="col-1 text-decoration-line-through me-3">549$</div>
   steps-to-reproduce: |
@@ -145,9 +145,9 @@ bugreports:
 - summary: |
     Удаление товаров из корзины
   status: Fail
-  bugreports:
-- summary: |
-   история покупок сохраняется после выхода из корзины в магазин
+bugreports:
+  - summary: |
+      история покупок сохраняется после выхода из корзины в магазин
   environment: |
     <a class="nav-link" href="/">Store</a>
   steps-to-reproduce: |
@@ -165,8 +165,8 @@ bugreports:
     Оформление заказа
   status:fail
 bugreports:
-- summary: |
-  При оформлении заказа отсутствует чек лист, кнопка (Х-закрытие окна) не работает
+  - summary: |
+      При оформлении заказа отсутствует чек лист, кнопка (Х-закрытие окна) не работает
   environment: |
     <button class="btn btn-success" style="width: 20%;">Checkout</button>
   steps-to-reproduce: |
