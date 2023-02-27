@@ -1,68 +1,52 @@
 ---
 - summary: |
-     вход в приложение.
-  status: pass
-  ---
+вход в приложение.
+status: pass
 - summary: |
-    Кроссбраузерность.
-  status: fail
----
+Кроссбраузерность.
+status: fail
 - summary: |
-     Смена языка в приложении
-  status: fail
----
+Смена языка в приложении
+status: fail
 - summary: |
-    Фильтрация товаров по названию
-  status: fail
----
+Фильтрация товаров по названию
+status: fail
 - summary: |
-    Фильтрация товаров по категории
-  status: pass
----
+Фильтрация товаров по категории
+status: pass
 - summary: |
-   Фильтрация товаров по производителю
-  status: pass 
----
+Фильтрация товаров по производителю
+status: pass 
 - summary: |
-  Фильтрация товаров по наличию в магазине
-  status: pass 
----
+Фильтрация товаров по наличию в магазине
+status: pass 
 - summary: |
-   Фильтрация товаров по цене
-  status: pass 
----
+Фильтрация товаров по цене
+status: pass 
 - summary: |
-   добавление товаров в корзину
-  status: pass
----
+добавление товаров в корзину
+status: pass
 - summary: |
-  Постраничный просмотр товаров
-  status: pass 
----
+Постраничный просмотр товаров
+status: pass 
 - summary: |
-  Корзина отображается корректно.
-  status: fail
----
+Корзина отображается корректно.
+status: fail
 - summary: |
-  Наличие товаров в корзине
-  status: pass
+Наличие товаров в корзине
+status: pass
 - summary: |
-  Отсутвиие перезагрузки сайта
-  status: fail
----
+Отсутвиие перезагрузки сайта
+status: fail
 - summary: |
-  Сохранение товаров в корзине
-  status: pass 
----
+Сохранение товаров в корзине
+status: pass 
 - summary: |
-  Добавление товаров в корзине
-  status: fail
----
+Добавление товаров в корзине
+status: fail
 - summary: |
-  Удаление товаров из корзины
-  status: pass
----
+Удаление товаров из корзины
+status: pass
 - summary: |
-  Оформление заказа
-  status: fail
-  
+Оформление заказа
+status: fail
