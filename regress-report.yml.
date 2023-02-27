@@ -11,6 +11,7 @@ test-cases:
   - summary: |
       Смена языка в приложении
     status: fail 
+    
 bugreports: 
   - summary: |
       язык в приложениии меняется не полностью
@@ -36,6 +37,7 @@ bugreports:
   - summary: |
       Фильтрация товаров по категории
     status: fail
+    
 bugreports:
   - summary: |
       фильтраци по категории не происходит
@@ -53,6 +55,7 @@ bugreports:
   - summary: |
       Фильтрация товаров по производителю
     status: Fail
+    
 bugreports:
   - summary: |
       фильтраци по производителю не происходит
@@ -73,6 +76,7 @@ bugreports:
   - summary: |
       Фильтрация товаров по цене
     status: fail
+    
 bugreports:
   - summary: |
       фильтраци по цене не происходит
@@ -99,6 +103,7 @@ bugreports:
   - summary: |
       Корзина отображается корректно.
     status: fail
+    
 bugreports:
   - summary: |
       корзина отображантся некорректно
@@ -127,7 +132,8 @@ bugreports:
 
   - summary: |
       Изменение количества товаров в корзине 
-    status: fail  
+    status: fail 
+    
 bugreports:
   - summary: |
       отсутствует функция изменения количества товаров
@@ -145,6 +151,7 @@ bugreports:
   - summary: |
       Удаление товаров из корзины
     status: Fail
+    
 bugreports:
   - summary: |
       история покупок сохраняется после выхода из корзины в магазин
@@ -164,6 +171,7 @@ bugreports:
   - summary: |
       Оформление заказа
     status:fail
+    
 bugreports:
   - summary: |
       При оформлении заказа отсутствует чек лист, кнопка (Х-закрытие окна) не работает
