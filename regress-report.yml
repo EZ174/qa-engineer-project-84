@@ -72,7 +72,7 @@ test-cases:
       Оформление заказа
     status:fail
     
- bugreports: 
+bugreports: 
   - summary: |
       язык в приложениии меняется не полностью
     environment: |
