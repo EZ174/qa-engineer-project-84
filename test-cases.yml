@@ -6,9 +6,9 @@
   prerequisites: |
     строке ввода имеем сайт страницы
   test-data: |
-    https://hexlet-products-store.vercel.app/
+    адрес ссылки
   steps:
-    нажимаем на адрес ссылки
+    нажимаем https://hexlet-products-store.vercel.app/
   expected-result: |
     Открывается приложение
     
