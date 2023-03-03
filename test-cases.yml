@@ -8,7 +8,7 @@
   test-data: |
     адрес ссылки
   steps:
-    - вводим #https://hexlet-products-store.vercel.app/# в строку поиска
+    - вводим #https://hexlet-products-store.vercel.app/# - в строку поиска
     - нажимаем ввод
   expected-result: |
     Открывается приложение
