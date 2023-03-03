@@ -30,7 +30,7 @@ test-cases:
 
   - summary: |
       Фильтрация товаров по наличию в магазине
-  status: pass
+    status: pass
 
   - summary: |
       Фильтрация товаров по цене
