@@ -4,11 +4,12 @@
   requirement: |
     При нажатии на ссылку в приложении пользователь попадает на страницу приложения.
   prerequisites: |
-    строке ввода имеем сайт страницы
+    имеем возможность ввести адрес ссылки в строку поиска
   test-data: |
     адрес ссылки
   steps:
-    нажимаем https://hexlet-products-store.vercel.app/
+    - вводим "https://hexlet-products-store.vercel.app/" в строку поиска
+    - нажимаем ввод
   expected-result: |
     Открывается приложение
     
