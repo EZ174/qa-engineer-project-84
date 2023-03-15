@@ -66,11 +66,11 @@ test-cases:
 
   - summary: |
       Удаление товаров из корзины
-    status: Fail
+    status: fail
 
   - summary: |
       Оформление заказа
-    status:fail
+    status: fail
     
 bugreports: 
   - summary: |
